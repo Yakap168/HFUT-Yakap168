@@ -4,7 +4,7 @@
 // @version      4.3.14
 // @description  学堂在线辅助：① 视频课自动刷课（静音 + 倍速 + 播完自动进入下一单元；目录筛选为「视频」时一路上连刷）② 参考资料库（PDF / PPTX / DOCX / TXT / JSON → 切片 → 按题干检索 Top-K → 注入提示词）③ 按题库或大模型(AI)自动作答（单选 / 多选 / 判断 / 填空简答等主观题）④ 选中选项后自动提交 ⑤ 题目提取与题库管理（可导出 JSON）。
 // @description  「选中选项 → 自动提交」的实现要点：脚本独立轮询等站点把「提交」点亮再点，随后回读「按钮文案 / 剩余N次 / 页码 / 题干」确认是否真的交上去，没生效才重试；同一份选择只自动交一次，改答案会重新提交；答题任务运行期间由任务自己提交，旁观逻辑不介入。
-// @author       Gemini AI Assistant (Based on V3.8)
+// @coauthor     Codex-deepseek-flash
 // @match        https://*.xuetangx.com/*
 // @require      https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
 // @require      https://cdn.bootcdn.net/ajax/libs/pdf.js/3.11.174/pdf.min.js
